@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h2><img src="planetexpress.png" />Ideal Car</h2>
+      </header>
+      <form id="carForm" method="get" action="carStuff.php">
+        <fieldset>
+            <legend>Start your build!</legend>
+            <label for="genMan">Select a manufacturer
+                <select id="genMan" name="genMan" size="6" style="width: 200px">
+                    <option value="genMan1">Generic Manufacturer #1</option>
+                    <option value="genMan2">Generic Manufacturer #2</option>
+                    <option value="genMan3">Generic Manufacturer #3</option>
+                    <option value="genMan4">Generic Manufacturer #4</option>
+                    <option value="genMan5">Generic Manufacturer #5</option>
+                    <option value="genMan6">Generic Manufacturer #6</option>
+                </select>
+            </label><br/>
+            <label for="colorSelect">Select a color
+                <input type="color" id="colorSelect" name="colorSelect">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Select your options!</legend>
+            <fieldset>
+                <legend>Drive options</legend>
+                <input type="checkbox" id="driveOpt1" name="driveOptions" value="driveOpt1">
+                <label for="driveOpt1">Drive option #1</label><br/>
+                <input type="checkbox" id="driveOpt2" name="driveOptions" value="driveOpt2">
+                <label for="driveOpt2">Drive option #2</label><br/>
+                <input type="checkbox" id="driveOpt3" name="driveOptions" value="driveOpt3">
+                <label for="driveOpt3">Drive option #3</label><br/>
+                <input type="checkbox" id="driveOpt4" name="driveOptions" value="driveOpt4">
+                <label for="driveOpt4">Drive option #4</label>
+            </fieldset>
+            <fieldset>
+                <legend>Paint finish options</legend>
+                <input type="radio" id="paintOpt1" name="paintOptions" value="paintOpt1">
+                <label for="paintOpt1">Paint finish option #1</label><br/>
+                <input type="radio" id="paintOpt2" name="paintOptions" value="paintOpt2">
+                <label for="paintOpt2">Paint finish option #2</label><br/>
+                <input type="radio" id="paintOpt3" name="paintOptions" value="paintOpt3">
+                <label for="paintOpt3">Paint finish option #3</label><br/>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Your info</legend>
+            <label for="license">Enter your driver's license #</label>
+            <input type="text" id="license" name="license" placeholder="license #" size="20" required minlength="10" maxlength="20"><br/>
+            <label for="date">Select your pickup date</label>
+            <input type="date" id="date" name="date" min="2024-01-01"><br/>
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" placeholder="Comments" style="height: 100px"></textarea>
+        </fieldset>
+        <input type="submit" id="process" value="Submit Car"/>
+      </form>
+</body>
+</html>
